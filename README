@@ -1,0 +1,64 @@
+perl-SVG-Parser
+------------------------------------------
+SVG::Parser is an XML parser that converts SVG XML documents into SVG 
+objects that may then be manipulated by the SVG module before being 
+regenerated into XML.  It will work using any installed Expat or SAX 
+parser, and may be given preferred list of parsers to try; the first to 
+load successfully will be used. For more advanced uses, any custom Expat 
+or SAX parser class can also be provided as the superclass XML parser 
+for SVG::Parser.
+
+Runtime requirements:
+  perl-5.10.0-3
+  perl-SVG-2.39-1
+
+Build requirements:
+  cygport-0.3.9-1
+  make-3.81-1
+
+Canonical website:
+  http://search.cpan.org/dist/SVG-Parser/
+
+Canonical download:
+  http://search.cpan.org/CPAN/authors/id/P/PE/PETERW/
+
+-------------------------------------------
+
+Build instructions:
+  unpack perl-SVG-Parser-1.03-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./perl-SVG-Parser-1.03-X.cygport all
+
+This will create:
+  /usr/src/perl-SVG-Parser-1.03-X-src.tar.bz2
+  /usr/src/perl-SVG-Parser-1.03-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/lib/perl5/vendor_perl/5.10/SVG/Parser.pm
+  /usr/lib/perl5/vendor_perl/5.10/SVG/Parser/Base.pm
+  /usr/lib/perl5/vendor_perl/5.10/SVG/Parser/Expat.pm
+  /usr/lib/perl5/vendor_perl/5.10/SVG/Parser/SAX.pm
+  /usr/lib/perl5/vendor_perl/5.10/SVG/Parser/SAX/Handler.pm
+  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/auto/SVG/Parser/.packlist
+  /usr/share/doc/perl-SVG-Parser-1.03/Changes
+  /usr/share/doc/perl-SVG-Parser-1.03/README
+  /usr/share/man/man3/SVG.Parser.3pm.gz
+  /usr/share/man/man3/SVG.Parser.Expat.3pm.gz
+  /usr/share/man/man3/SVG.Parser.SAX.3pm.gz
+  /usr/share/man/man3/SVG.Parser.SAX.Handler.3pm.gz
+
+------------------
+
+Port Notes:
+
+----- version 1.03-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
